@@ -68,7 +68,7 @@ def visualize_modular(df_encoded, df_original):
 
 # --- APP LAYOUT ---
 
-st.title("📡 ChurnGuard AutoML Pipeline")
+st.title("📡 Customer Retention Prediction Pipeline")
 st.sidebar.header("User Control Panel")
 
 # Load Model
