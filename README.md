@@ -1,4 +1,4 @@
-# 📡 Telecom Customer Churn Prediction Pipeline
+# 📡 Smart Customer Retention Prediction Pipeline
 
 ChurnGuard is an end-to-end Automated Machine Learning (AutoML) application designed to predict customer churn with high sensitivity. Built with Python, Gradient Boost, and Streamlit, it features a robust preprocessing pipeline that standardizes data, handles class imbalance, and provides actionable risk reports.
 
