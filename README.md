@@ -45,6 +45,7 @@ The pipeline strictly follows a Split → Scale → Resample strategy to prevent
 
 ## 📂 Repository Structure
 
+    ├── Model Training.py                         # Model Training Testing
     ├── app.py                         # Main Streamlit application logic
     ├── gradient_boosting_model.joblib # Trained Gradient Boosting model
     ├── scaler.joblib                  # Pre-trained StandardScaler
