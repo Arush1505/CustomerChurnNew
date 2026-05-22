@@ -68,18 +68,16 @@ def visualize_modular(df_encoded, df_original):
 
 # --- APP LAYOUT ---
 
-st.title("Customer Retention Prediction Pipeline")
+st.title("📡 Customer Retention Prediction Pipeline")
 st.sidebar.header("User Control Panel")
 
 # Load Model
 try:
-    model = joblib.load("gradient_boosting_model.joblib")
-    scaler = joblib.load("scaler.joblib")
-    model_columns = joblib.load('model_columns.joblib')
+    model = joblib.load("./gradient_boosting_model.joblib")
+    scaler = joblib.load("./scaler.joblib")
+    model_columns = joblib.load('./model_columns.joblib')
 except:
     st.error("Model file not found. Please ensure 'gradient_boosting_model.joblib' is in the directory.")
-
-
 
 btn = st.button(label="START PIPELINE")
 if btn:
@@ -159,4 +157,3 @@ with st.sidebar.form("manual_entry"):
 
 if submit_manual:
     st.sidebar.metric("Churn Risk", "High" if m_charges > 50 else "Stable")
-
